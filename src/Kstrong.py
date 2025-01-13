@@ -29,9 +29,3 @@ def karplus_strong(frequency, duration, sampling_rate=44100):
 
     return audio
 
-# Generate a sound at 440 Hz for 2 seconds
-audio = karplus_strong(440, 2)
-
-# Play the sound
-play_obj = sa.play_buffer(audio, 1, 2, 44100)
-play_obj.wait_done()

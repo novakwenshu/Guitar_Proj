@@ -1,9 +1,9 @@
 class Chord:
-    def __init__(self):
-        pass
+    def __init__(self, notes):
+        self.notes = notes
 
     def Up():
         pass
 
     def Down():
-        
+        pass
