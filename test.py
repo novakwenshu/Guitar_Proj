@@ -6,6 +6,7 @@ import sounddevice as sd
 import numpy as np
 from IPython.display import display, Audio
 import threading
+import simpleaudio
 
 '''
 scale = []
@@ -30,10 +31,19 @@ chord.append(Note('G3', 196))
 chord.append(Note('B3', 247))
 chord.append(Note('G4', 392))
 
+
+
+
+
 g_chord = Chord(chord)
 
-g_chord.Down(0.2)
-g_chord.Up(0.2)
+g_chord.Down(0.75)
+g_chord.Down(0.75)
+g_chord.Up(0.75)
+g_chord.Down(0.75)
+g_chord.Up(0.75)
+
+
 
 
 

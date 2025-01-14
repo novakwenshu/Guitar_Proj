@@ -10,9 +10,7 @@ class Note:
         self.frequency = frequency
     
     def play(self, duration):
-        buffer = karplus_strong(self.frequency, duration)
-        sd.play(buffer,samplerate=44100)
-        sd.wait()
+        return karplus_strong(self.frequency, duration)
 
     def getName(self):
         return self.name
