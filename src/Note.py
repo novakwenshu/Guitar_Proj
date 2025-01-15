@@ -2,8 +2,6 @@ from .Kstrong import *
 from lib.common import *
 import sounddevice as sd
 
-
-
 class Note:
     def __init__(self, name, frequency):
         self.name = name

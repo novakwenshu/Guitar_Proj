@@ -1,6 +1,9 @@
 global sixth_string
 global fifth_string
 global fourth_string
+global third_string
+global second_string
+global first_string
 
 sixth_string = {
     "E2" : 82, # Open
@@ -97,3 +100,4 @@ first_string ={
     "D#5" : 622,
     "E5" : 659,
 }
+

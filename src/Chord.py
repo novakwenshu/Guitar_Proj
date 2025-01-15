@@ -16,11 +16,12 @@ class Chord:
         buffer = np.sum(chord, axis=0)
 
         # Need to normalize here or else it will produce static
+        # I believe that there is always some noise in the notes
+        # Summing emphasisizes it again so it must be normalized again
         buffer = buffer / np.max(np.abs(buffer))
         audio = (buffer * 32767).astype(np.int16)
 
-        sd.play(audio,samplerate=44100)
-        sd.wait()
+        return audio
 
     def Down(self, duration):
         chord = []
@@ -32,5 +33,4 @@ class Chord:
         buffer = buffer / np.max(np.abs(buffer))
         audio = (buffer * 32767).astype(np.int16)
 
-        sd.play(audio,samplerate=44100)
-        sd.wait()
+        return audio
